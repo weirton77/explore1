@@ -11,6 +11,6 @@ plot(power$postime,power$meter1, main = "",ylab ="Energy sub metering",xlab= "",
 legend("topright",c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),lty = 1, lwd=2, col=c("black","red","blue")) 
 lines(power$postime,power$meter2, col= "red")  #
 lines(power$postime,power$meter3, col = "blue")  # looks fine.  add colorto plot and legend
-plot(power$postime,power$reactive, main = "",ylab ="Global_rective_power",xlab= "datetime",type = "l")
+plot(power$postime,power$reactive, main = "",ylab ="Global_reactive_power",xlab= "datetime",type = "l")
 par(mfrow = c(1,1))  #otherwise the next plot will be skinnier than expected
 #dev.off()
